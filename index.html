@@ -10,6 +10,7 @@
 
     <!-- Styles -->
     <link href="./css/page.min.css" rel="stylesheet">
+    <link href="./css/mystyle.css" rel="stylesheet">
 
   </head>
   <body class="body-scrolled navbar-scrolled">
@@ -20,7 +21,7 @@
 
         <div class="navbar-left">
           <button class="navbar-toggler" type="button">☰</button>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#header">
             <img class="logo-dark" src="../assets/img/logo/slack.png" alt="logo">
             <img class="logo-light" src="../assets/img/logo/slack.png" alt="logo">
           </a>
@@ -28,31 +29,36 @@
 
         <section class="navbar-mobile">
           <nav class="nav nav-navbar ml-auto">
-            <a class="nav-link" href="#home">ホーム</a>
-            <a class="nav-link" href="#home">ベネフィット</a>
-            <a class="nav-link" href="#home">従来の課題</a>
-            <a class="nav-link" href="#home">ロジクラの作業工程</a>
-            <a class="nav-link" href="#home">機能</a>
-            <a class="nav-link" href="#home">価格</a>
-            <a class="nav-link" href="#home">お問い合わせ</a>
+            <a class="nav-link" href="#header">ホーム</a>
+            <a class="nav-link" href="#benefit">ベネフィット</a>
+            <a class="nav-link" href="#pain">従来の課題</a>
+            <a class="nav-link" href="#flow">ロジクラの作業工程</a>
+            <a class="nav-link" href="#feature">機能</a>
+            <a class="nav-link" href="#price">価格</a>
           </nav>
+          <div class="mr-4">
+            <a class="btn btn-xs btn-primary ml-lg-4 mr-2 shadow-1 hover-shadow-4" href="#contact">お問い合わせ</a>
+          </div>
         </section>
 
       </div>
     </nav>
 
     <!-- header -->
-    <header class="header bg-gray">
+    <!-- <header class="header bg-gray" id="header" style="background-image: url(./img/main-img.jpg)"> -->
+      <header class="header bg-gray pt-9 pb-6" id="header">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <h1 class="fw-600">iPhoneで簡単棚卸し</h1>
-            <p class="fw-400">クラウド型の在庫管理システム</p>
+          <div class="col-md-6 text-center">
+            <p class="lead-1 fw-600 original-solution">アパレル店舗向けベストソリューション</p>
+            <h1 class="fw-600">棚卸しの<span class="highlight">人件費と時間</span><br>スマホで削減しませんか？</h1>
+            <p class="lead-3 fw-600">クラウド型の在庫管理システム</p>
+            <a class="btn btn-xl btn-primary w-300" href="#contact">お問い合わせをする</a>
           </div>
           <div class="col-md-6">
-            <form class="row input-border" action="../assets/php/sendmail.php" method="POST" data-form="mailer">
+            <img src="./img/iphonepick.png" width="60%" style="margin-left:20%;" alt="">
+            <!-- <form class="row input-border" action="../assets/php/sendmail.php" method="POST" data-form="mailer">
               <div class="col-md-10 mx-auto bg-white p-6 rounded shadow-1">
-                <div class="alert alert-success d-on-success">We received your message and will contact you back soon.</div>
                 <div class="form-group">
                   <input class="form-control" type="text" name="company" placeholder="会社名">
                 </div>
@@ -65,48 +71,54 @@
                 <div class="form-group">
                   <input class="form-control" type="tel" name="tel" placeholder="電話番号">
                 </div>
-                <button class="btn btn-lg btn-block btn-primary" type="submit">この内容でお問い合わせ</button>
+                <button class="btn btn-lg btn-block btn-primary shadow-2 hover-shadow-5" type="submit">この内容でお問い合わせ</button>
               </div>
-            </form>
+            </form> -->
           </div>
         </div>
       </div>
     </header>
 
     <!-- section1 -->
-    <section class="section text-center">
+    <section class="section text-center" id="benefit">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h3 class="fw-600">棚卸しの精度の向上で、在庫管理のコストを圧縮し、<br>経営体質の強化が図れます。</h3>
-            <p class="fw-400">店舗での棚卸しの精度の向上により、店舗在庫の最適化が図れます。<br>また、在庫管理システムとの連携により、発注精度の向上、余剰在庫の算出、欠品の撲滅につながります。</p>
+          <div class="col-md-10 mx-auto">
+            <h3 class="fw-600 original-img">棚卸しの精度の向上で、在庫管理のコストを圧縮し、<br><span class="highlight2">経営体質の強化</span>が図れます</h3>
+            <p class="lead-1 fw-400">店舗での棚卸しの精度の向上により、店舗在庫の最適化が図れます。<br>また、在庫管理システムとの連携により、発注精度の向上、余剰在庫の算出、欠品の撲滅につながります。</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- section2 -->
-    <section class="section bg-gray">
+    <section class="section bg-gray" id="pain">
       <div class="container">
-        <header class="section-header">
-          <h2 class="fw-600">従来の棚卸しが抱える3つの課題</h2>
-          <p class="fw-400">膨大な作業時間と人件費</p>
+        <header class="section-header mb-6">
+          <h2 class="fw-600"><img src="./img/3365.png" alt="" width="30px"> こんな<span class="highlight">お悩み</span>抱えていませんか？</h2>
+          <p class="lead-2 fw-600">従来の棚卸しが抱える3つの課題</p>
         </header>
         <div class="row gap-y text-center">
           <div class="col-md-6 col-xl-4 feature-1">
-            <div class="card card-body border text-center shadow-1 hover-shadow-5">
+            <div class="card card-body border text-center p-5 original-card">
+              <img src="./img/pain1.jpg" alt="...">
+              <br>
               <h5 class="fw-600">目視・手書き・手入力作業</h5>
               <p class="fw-400">目視・手書き・手入力作業のため、棚卸しにたくさんの人手と時間を取られてしまう。</p>
             </div>
           </div>
           <div class="col-md-6 col-xl-4 feature-1">
-            <div class="card card-body border text-center shadow-1 hover-shadow-5">
+            <div class="card card-body border text-center p-5 original-card">
+              <img src="./img/pain2.jpg" alt="...">
+              <br>
               <h5 class="fw-600">数え間違い・書き間違い</h5>
               <p class="fw-400">アイテム数が多く、ケース・バラなど単位も様々なため、数え間違えてしまったり、書き間違えてしまう。</p>
             </div>
           </div>
           <div class="col-md-6 col-xl-4 feature-1">
-            <div class="card card-body border text-center shadow-1 hover-shadow-5">
+            <div class="card card-body border text-center p-5 original-card">
+              <img src="./img/pain3.jpg" alt="...">
+              <br>
               <h5 class="fw-600">パソコンへの手入力</h5>
               <p class="fw-400">手書きの棚卸しデータをパソコンに入力するのが手間。また入力間違いによりデータ上の在庫すうと実在庫数にズレが生じる。</p>
             </div>
@@ -116,37 +128,40 @@
     </section>
 
     <!-- section3 -->
-    <section class="section">
+    <section class="section" id="flow">
       <div class="container">
         <header class="section-header">
-          <h2 class="fw-600">ロジクラを用いた棚卸しの作業工程</h2>
+          <h2 class="fw-600 original-tag">ロジクラを用いた棚卸しの作業工程</h2>
         </header>
         <div class="row gap-y text-center">
           <div class="col-md-6 col-xl-4 feature-1">
-            <h5 class="fw-600">スマホで棚卸しを選択</h5>
-            <p class="fw-400">PCから棚卸し表を作成後に、スマホから棚卸しを開始。</p>
+            <img src="./img/flow1.png" alt="">
+            <h5 class="fw-600 mt-5 original-h5 one">スマホで棚卸しを選択</h5>
+            <p class="fw-400">PCから棚卸表を作成後、スマホから棚卸しを開始</p>
           </div>
           <div class="col-md-6 col-xl-4 feature-1">
-            <h5 class="fw-600">スマホでバーコードをスキャン</h5>
-            <p class="fw-400">バーコードをスマホでスキャンして数量を入力するだけ。</p>
+            <img src="./img/flow2.png" alt="">
+            <h5 class="fw-600 mt-5 original-h5 two">スマホでバーコードをスキャン</h5>
+            <p class="fw-400">バーコードにスマホをかざすだけ</p>
           </div>
           <div class="col-md-6 col-xl-4 feature-1">
-            <h5 class="fw-600">写真を見ながら棚卸し</h5>
-            <p class="fw-400">バーコードに紐づいた写真が表示されるので、棚卸しのミスも発生しません。</p>
+            <img src="./img/flow3.png" alt="">
+            <h5 class="fw-600 mt-5 original-h5 three">写真を見ながら棚卸し</h5>
+            <p class="fw-400">バーコードに紐づいた商品を表示</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- section4 -->
-    <section class="section bg-gray">
+    <section class="section bg-gray" id="feature">
       <div class="container">
         <header class="section-header">
-          <h2 class="fw-600">その他の機能</h2>
+          <h2 class="fw-600 original-tag">その他の機能</h2>
         </header>
         <div class="row gap-y align-items-center">
           <div class="col-md-6 ml-auto">
-            <h4 class="fw-600">クラウドで在庫の管理ができるので、他店舗の在庫検索もラクラク</h4>
+            <h4 class="fw-600">クラウドで在庫の管理ができるので、<br><span class="highlight2">他店舗の在庫検索</span>もラクラク</h4>
             <p class="fw-400">商品在庫の検索が早くなり、顧客満足度の向上に貢献します。</p>
           </div>
 
@@ -157,7 +172,7 @@
         <hr class="my-8">
         <div class="row gap-y align-items-center">
           <div class="col-md-6 mr-auto">
-            <h4 class="fw-600">既存の基幹システムとの親和性</h4>
+            <h4 class="fw-600">既存の<span class="highlight2">基幹システムとの親和性</span>があります</h4>
             <p class="fw-400">基幹システムに対して棚卸しのデータをCSV出力できるので、基幹システムとの連携が図れます。</p>
           </div>
           <div class="col-md-5">
@@ -167,7 +182,7 @@
         <hr class="my-8">
         <div class="row gap-y align-items-center">
           <div class="col-md-6 ml-auto">
-            <h4 class="fw-600">バーコードの作成</h4>
+            <h4 class="fw-600"><span class="highlight2">バーコードの作成</span>が可能に</h4>
             <p class="fw-400">一部バーコードがない商品に対してもバーコードが作成できます。(別途プリンターを用意)</p>
           </div>
           <div class="col-md-5 order-md-first">
@@ -178,18 +193,20 @@
     </section>
 
     <!-- section5 -->
-    <section class="section">
+    <section class="section" id="price">
       <div class="container">
         <div class="row gap-y align-items-center">
           <div class="col-md-5">
-            <h2 class="fw-600">既存デバイスよりも圧倒的な低コスト</h2>
-            <p class="fw-400">従来のハンディデバイスは1台10~30万円、圧倒的に低コストで導入できます。</p>
+            <h2 class="fw-600 text-center original-tag">価格体系</h2>
+            <br>
+            <h2 class="fw-600">既存デバイスより<span class="highlight2">圧倒的<br>低コスト</span>で提供</h2>
+            <p class="lead-2 fw-400">従来のハンディデバイスは1台10~30万円、<br>圧倒的に低コストで導入できます。</p>
           </div>
           <div class="col-md-6 offset-md-1 ml-auto">
             <div class="row gap-y">
               <div class="col-md-12">
                 <div class="card text-center shadow-1 hover-shadow-5">
-                  <div class="card-img-top text-white bg-img h-200 d-flex align-items-center" style="background-image: url(../assets/img/thumb/3.jpg)" data-overlay="1">
+                  <div class="card-img-top text-white bg-img h-200 d-flex align-items-center" style="background-image: url(./img/back1.png)" data-overlay="1">
                     <div class="position-relative w-100">
                       <p class="lead-4 text-uppercase fw-600 mb-0">月額あたりの利用料金</p>
                     </div>
@@ -215,11 +232,11 @@
     </section>
 
     <!-- section6 -->
-    <section class="section bg-gray text-center">
+    <section class="section bg-gray text-center" id="contact">
       <div class="container">
         <header class="section-header">
-          <h2 class="fw-600">お問い合わせ</h2>
-          <p class="fw-400">いつでもお問い合わせください</p>
+          <h2 class="fw-600 original-tag">お問い合わせ</h2>
+          <p class="lead-2 fw-600">いつでもお問い合わせください</p>
         </header>
         <div class="row">
           <form class="col-md-4 col-xl-6 mx-auto input-border" action="../assets/php/sendmail.php" method="POST" data-form="mailer">
@@ -236,7 +253,7 @@
             <div class="form-group">
               <input class="form-control" type="tel" name="tel" placeholder="電話番号">
             </div>
-            <button class="btn btn-lg btn-block btn-primary" type="submit">この内容でお問い合わせ</button>
+            <button class="btn btn-lg btn-block btn-primary shadow-2 hover-shadow-5" type="submit">この内容でお問い合わせ</button>
           </form>
         </div>
       </div>
@@ -264,5 +281,21 @@
       </div>
     </footer>
 
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css"/>
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
   </body>
 </html>
